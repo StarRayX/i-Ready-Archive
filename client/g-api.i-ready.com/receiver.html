@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        try {
+            var els = window.location.hostname.split(".");
+            var domain = els[els.length - 2] + "." + els[els.length - 1];
+
+            document.domain = domain;
+        } catch (e) {
+            console.log(e);
+        }
+    </script>
+</body>
+
+</html>

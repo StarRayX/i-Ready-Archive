@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Game Container</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <script type="text/javascript">
+        window.onload = function() {
+            window.parent.dispatchEvent(new Event('gameIframeLoaded'));
+            // Setting canvas aspect ratio to match Unity reference resolution
+            var canvas = document.querySelector("#unity-canvas");
+            canvas.height = canvas.width / (1366 / 768);
+        };
+        window.addEventListener('mousemove', function(e) {
+            window.parent.dispatchEvent(new Event('iframeActivity'));
+        });
+        window.addEventListener('click', function(e) {
+            window.parent.dispatchEvent(new Event('iframeActivity'));
+        });
+        window.addEventListener('keypress', function(e) {
+            window.parent.dispatchEvent(new Event('iframeActivity'));
+        });
+
+        try {
+            var els = window.location.hostname.split(".");
+            var domain = (els.length >= 3 ? (els[els.length - 2] + ".") : "") + els[els.length - 1];
+
+            document.domain = domain;
+        } catch (e) {
+            console.log(e);
+        }
+
+        function changeGame() {
+            window.parent.dispatchEvent(new Event('changeGame'));
+        }
+
+        function enterFullscreen() {
+            window.parent.dispatchEvent(new Event('enterFullscreen'));
+        }
+
+        function hideFullscreenSafari() {
+            if (navigator.userAgent.match(/Safari/i) && navigator.vendor.match(/Apple/i)) {
+                document.getElementById('fullscreen').remove();
+            }
+        }
+    </script>
+    <style type="text/css">
+        body {
+            overflow: hidden;
+        }
+
+        canvas {
+            user-select: none;
+        }
+
+        #container {
+            background: none !important;
+            display: table;
+            margin: 0 auto !important;
+            max-width: 864px;
+            width: 100%;
+            font-size: 0;
+        }
+
+        #unity-canvas {
+            width: 100%;
+        }
+
+        .game-controls {
+            background: #f7f5f6;
+            box-sizing: border-box;
+            color: #252122;
+            display: table;
+            margin: 0 auto;
+            max-width: 864px;
+            padding: 7px 12px;
+            width: 100%;
+        }
+
+        .change,
+        .fullscreen {
+            background: none;
+            border-width: 0;
+            cursor: pointer;
+            font-family: 'Open Sans', Helvetica, Arial;
+            font-size: 16px;
+            font-weight: 700;
+            outline: none;
+            padding: 0;
+        }
+
+        .change {
+            float: left;
+        }
+
+        .fullscreen {
+            background-image: url('../images/fullscreen.png');
+            background-position: right center;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            float: right;
+            padding-right: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="game-controls">
+        <button class="change" type="button" onclick="changeGame();">Change Game</button>
+        <button id="fullscreen" class="fullscreen" type="button" onclick="enterFullscreen();">Fullscreen</button>
+    </div>
+    <div id="container">
+        <canvas id="unity-canvas"></canvas>
+    </div>
+    <script type="text/javascript">
+        hideFullscreenSafari();
+    </script>
+</body>
+
+</html>

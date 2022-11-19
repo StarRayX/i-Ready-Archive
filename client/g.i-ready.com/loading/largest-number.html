@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <title>Largest Number You Can Make</title>
+    <style type="text/css">
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        canvas {
+            background: #009ad2;
+            /* Old browsers */
+            background: -moz-linear-gradient(top, #009ad2 0%, #53cbf1 53%, #9ce5ee 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #009ad2 0%, #53cbf1 53%, #9ce5ee 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #009ad2 0%, #53cbf1 53%, #9ce5ee 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009ad2', endColorstr='#9ce5ee', GradientType=0);
+            /* IE6-9 */
+            border: 6px solid white;
+            border-radius: 23px;
+            display: block;
+            margin: 24px auto 0;
+        }
+
+        @font-face {
+            font-family: 'Gibson';
+            src: url('../fonts/Gibson-Regular.ttf');
+            font-weight: 400;
+        }
+
+        @font-face {
+            font-family: 'GibsonSemiBold';
+            src: url('../fonts/Gibson-SemiBold.ttf');
+            font-weight: 400;
+        }
+
+        @font-face {
+            font-family: 'GibsonSemiBoldItalic';
+            src: url('../fonts/Gibson-SemiBoldItalic.ttf');
+            font-weight: 400;
+        }
+    </style>
+    <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.parent.dispatchEvent(new Event('loadingIframeLoaded'));
+        });
+        window.addEventListener('mousemove', function(e) {
+            window.parent.dispatchEvent(new Event('iframeActivity'));
+        });
+        window.addEventListener('click', function(e) {
+            window.parent.dispatchEvent(new Event('iframeActivity'));
+        });
+        window.addEventListener('keypress', function(e) {
+            window.parent.dispatchEvent(new Event('iframeActivity'));
+        });
+
+        try {
+            var els = window.location.hostname.split(".");
+            var domain = (els.length >= 3 ? (els[els.length - 2] + ".") : "") + els[els.length - 1];
+
+            document.domain = domain;
+        } catch (e) {
+            console.log(e);
+        }
+    </script>
+</head>
+
+<body>
+    <script src="/scripts/loading-largest-number.c9978887.js"></script>
+</body>
+
+</html>

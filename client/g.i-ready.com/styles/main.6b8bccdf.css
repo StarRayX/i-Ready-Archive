@@ -1,0 +1,1059 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+input,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+textarea,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: Arial, sans-serif
+}
+
+body {
+    line-height: 1
+}
+
+body,
+html {
+    height: 100%
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    -ms-interpolation-mode: bicubic
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: '';
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+*,
+:after,
+:before {
+    box-sizing: inherit
+}
+
+a {
+    text-decoration: none
+}
+
+a:hover {
+    cursor: pointer
+}
+
+option,
+select {
+    font-family: inherit
+}
+
+input,
+textarea {
+    box-sizing: border-box
+}
+
+textarea {
+    overflow: hidden
+}
+
+input[type=email],
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button,
+input[type=password],
+input[type=search],
+input[type=submit],
+input[type=text],
+input[type=url],
+textarea {
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0
+}
+
+input[type=number] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: textfield
+}
+
+input[type=submit] {
+    cursor: pointer
+}
+
+select {
+    -webkit-appearance: none
+}
+
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5)
+}
+
+:focus {
+    outline: 0
+}
+
+html {
+    color: #232323;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 24px
+}
+
+#header,
+#main,
+.block {
+    float: left;
+    width: 100%
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+p {
+    line-height: 125%
+}
+
+#app-container #app-body .game-boxes .game-box img:active+.button-wrapper button,
+.active-button,
+.button:active {
+    box-shadow: 0 0 0 #606060;
+    margin-top: 5px;
+    margin-bottom: -5px
+}
+
+.button {
+    color: #515151;
+    background: #fff;
+    border-radius: 4px;
+    border: none;
+    padding: .8em;
+    font-weight: 700;
+    display: inline-block;
+    line-height: 1.5;
+    box-shadow: 0 3px 0 #606060;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none !important;
+    width: 100%
+}
+
+@media (min-width:500px) {
+    .button {
+        width: auto
+    }
+}
+
+.button.beige {
+    background: #f7f0bf;
+    box-shadow: 0 3px 0 #beb79a
+}
+
+.button.beige:active {
+    box-shadow: 0 0 0 #beb79a
+}
+
+.button.blue {
+    box-shadow: 0 3px 0 #4ca3bf
+}
+
+.button.blue.bordered {
+    box-shadow: 0 2px 0 3px #4ca3bf
+}
+
+.button.blue:active {
+    box-shadow: 0 0 0 #4ca3bf
+}
+
+.button.blue-dark {
+    background: #4ca3bf;
+    box-shadow: 0 3px 0 #043c55;
+    color: #fff
+}
+
+.button.blue-dark:active {
+    box-shadow: 0 0 0 #043c55
+}
+
+.button.disabled,
+.button.grey {
+    background: #adaeaf;
+    box-shadow: 0 3px 0 #515151;
+    color: #fff
+}
+
+.button.disabled:active,
+.button.grey:active {
+    box-shadow: 0 0 0 #515151
+}
+
+.button.double {
+    line-height: 36px
+}
+
+.button.italic {
+    font-style: italic
+}
+
+.button.centered {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.button.large {
+    font-size: inherit
+}
+
+.button.huge {
+    font-size: 34px;
+    min-width: 230px
+}
+
+.button.massive {
+    font-size: 49px;
+    min-width: 174px;
+    padding: .1em 1em
+}
+
+.button.huge.beige,
+.button.massive.beige {
+    box-shadow: 0 8px 0 #beb79a
+}
+
+.button.huge.beige:active,
+.button.massive.beige:active {
+    box-shadow: 0 0 0 #beb79a
+}
+
+.button.huge.blue,
+.button.massive.blue {
+    box-shadow: 0 8px 0 #4ca3bf
+}
+
+.button.huge.blue:active,
+.button.massive.blue:active {
+    box-shadow: 0 0 0 #4ca3bf
+}
+
+.button.huge.grey,
+.button.massive.grey {
+    box-shadow: 0 8px 0 #515151
+}
+
+.button.huge.grey:active,
+.button.massive.grey:active {
+    box-shadow: 0 0 0 #515151
+}
+
+.button.huge:active,
+.button.massive:active {
+    margin-top: 8px;
+    margin-bottom: -8px
+}
+
+.button .sub {
+    display: block;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 7px;
+    padding-bottom: 9px
+}
+
+#receiver {
+    float: left
+}
+
+.halt-error {
+    background: rgba(0, 0, 0, .5);
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1000
+}
+
+.halt-error .message-wrapper {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .35);
+    left: 50%;
+    padding: 25px 25px 30px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 450px
+}
+
+.halt-error .message-wrapper .text {
+    line-height: 120%;
+    padding-bottom: 30px;
+    text-align: center
+}
+
+.halt-error .message-wrapper .button {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 180px
+}
+
+#app-container {
+    background: linear-gradient(to bottom, #fda84d 0, #f5e77e 100%);
+    display: table;
+    height: 100vh;
+    text-rendering: optimizeSpeed;
+    width: 100%
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+#app-container .waiting {
+    background: rgba(255, 255, 255, .5);
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50
+}
+
+#app-container .waiting .loading {
+    background-image: url(../images/loading.gif);
+    background-size: 100%;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    z-index: 10
+}
+
+#app-container #loading-progress {
+    background: #fff;
+    border-color: #fff;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 5px;
+    display: block;
+    height: 79px;
+    margin: 0 auto 100px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    width: 250px;
+    z-index: 100
+}
+
+#app-container #loading-progress.loaded {
+    border: none;
+    overflow: visible;
+    background: 0 0
+}
+
+#app-container #loading-progress .loading-backdrop {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    display: block;
+    height: 79px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2
+}
+
+#app-container #loading-progress .loading-backdrop::after {
+    animation: slider-test-2 3s infinite ease-in-out;
+    background: #fda84d;
+    content: '';
+    display: block;
+    height: 100%;
+    left: calc(0% - 3px);
+    position: absolute;
+    top: 0;
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    width: 6px
+}
+
+@keyframes slider-test-2 {
+    50% {
+        transform: translateX(240px)
+    }
+    100% {
+        transform: translateX(0)
+    }
+}
+
+#app-container #loading-progress .percent {
+    background: #fda84d;
+    display: block;
+    height: 79px;
+    position: relative;
+    transition: width .5s ease 0s;
+    width: 5.6%;
+    z-index: 3
+}
+
+#app-container #loading-progress .button {
+    width: 100%;
+    font-size: 21px
+}
+
+#app-container #game,
+#app-container #loading {
+    display: block;
+    margin: 0 auto
+}
+
+#app-container #game.invis,
+#app-container #loading.invis {
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1
+}
+
+#app-container #game #gameContainer,
+#app-container #loading #gameContainer {
+    display: block;
+    margin: auto !important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+#app-container #game #game-below,
+#app-container #loading #game-below {
+    margin: 20px 0 0
+}
+
+#app-container #game #game-below #version,
+#app-container #loading #game-below #version {
+    color: #a3d1d1;
+    font-size: 14px;
+    margin: 0 auto
+}
+
+#app-container #game #game-below #debug,
+#app-container #loading #game-below #debug {
+    margin: 15px auto 0;
+    max-height: 550px;
+    width: 864px
+}
+
+#app-container #game #game-below #debug .actions,
+#app-container #loading #game-below #debug .actions {
+    background: #fff6f6;
+    border: 1px solid #d0d0d0;
+    padding: 14px 12px
+}
+
+#app-container #game #game-below #debug .actions .button,
+#app-container #loading #game-below #debug .actions .button {
+    float: left;
+    font-size: 16px;
+    margin-right: 12px
+}
+
+#app-container #game #game-below #debug .actions .memory,
+#app-container #loading #game-below #debug .actions .memory {
+    font-size: 15px;
+    line-height: 58px
+}
+
+#app-container #game #game-below #debug .actions #memory-log-toggle,
+#app-container #loading #game-below #debug .actions #memory-log-toggle {
+    float: right;
+    margin: 23px 0 0 0
+}
+
+#app-container #game #game-below #debug .actions #memory-log-toggle:checked+label,
+#app-container #loading #game-below #debug .actions #memory-log-toggle:checked+label {
+    font-weight: 700
+}
+
+#app-container #game #game-below #debug .actions label[for=memory-log-toggle],
+#app-container #loading #game-below #debug .actions label[for=memory-log-toggle] {
+    color: #4ca3bf;
+    float: right;
+    font-size: 13px;
+    margin: 23px 4px 0 0
+}
+
+#app-container #game #game-below #debug .log,
+#app-container #game #game-below #debug .memory-log,
+#app-container #loading #game-below #debug .log,
+#app-container #loading #game-below #debug .memory-log {
+    float: left;
+    font-size: 15px;
+    line-height: 130%;
+    margin: 15px 0 35px;
+    width: 100%
+}
+
+#app-container #game #game-below #debug .memory-log,
+#app-container #loading #game-below #debug .memory-log {
+    background: #3d516d;
+    color: #f8f8f8;
+    display: none
+}
+
+#app-container #game #game-below #debug .memory-log.visible,
+#app-container #loading #game-below #debug .memory-log.visible {
+    display: block
+}
+
+#app-container #game #game-below #debug .memory-log thead,
+#app-container #loading #game-below #debug .memory-log thead {
+    background: #25497a
+}
+
+#app-container #game #game-below #debug .memory-log tbody,
+#app-container #loading #game-below #debug .memory-log tbody {
+    text-align: center
+}
+
+#app-container #game #game-below #debug .memory-log tbody tr[data-index="0"],
+#app-container #loading #game-below #debug .memory-log tbody tr[data-index="0"] {
+    background: #3e5d87
+}
+
+#app-container #game #game-below #debug .memory-log td,
+#app-container #game #game-below #debug .memory-log th,
+#app-container #loading #game-below #debug .memory-log td,
+#app-container #loading #game-below #debug .memory-log th {
+    padding: 15px 12px;
+    width: 500px
+}
+
+#app-container #game #game-below #debug .log,
+#app-container #loading #game-below #debug .log {
+    background: #726072;
+    color: #f8f8f8
+}
+
+#app-container #game #game-below #debug .log td,
+#app-container #game #game-below #debug .log th,
+#app-container #loading #game-below #debug .log td,
+#app-container #loading #game-below #debug .log th {
+    padding: 15px 12px
+}
+
+#app-container #game #game-below #debug .log td.time,
+#app-container #game #game-below #debug .log th.time,
+#app-container #loading #game-below #debug .log td.time,
+#app-container #loading #game-below #debug .log th.time {
+    width: 16%
+}
+
+#app-container #game #game-below #debug .log td.id,
+#app-container #game #game-below #debug .log th.id,
+#app-container #loading #game-below #debug .log td.id,
+#app-container #loading #game-below #debug .log th.id {
+    width: 35%
+}
+
+#app-container #game #game-below #debug .log td.message,
+#app-container #game #game-below #debug .log th.message,
+#app-container #loading #game-below #debug .log td.message,
+#app-container #loading #game-below #debug .log th.message {
+    width: 39%
+}
+
+#app-container #game #game-below #debug .log tbody,
+#app-container #loading #game-below #debug .log tbody {
+    text-align: left
+}
+
+#app-container #game #game-below #debug .log tbody tr[data-type="0"],
+#app-container #loading #game-below #debug .log tbody tr[data-type="0"] {
+    background: #7d4b5e
+}
+
+#app-container #iready-header {
+    background: #fff;
+    color: #515151;
+    line-height: 34px;
+    padding: 8px 20px;
+    position: relative;
+    text-align: center
+}
+
+#app-container #iready-header .logo {
+    float: left;
+    height: 25px;
+    margin-top: 5px
+}
+
+#app-container #iready-header .greeting {
+    margin-right: .8em;
+    padding-right: .8em;
+    font-weight: 700;
+    line-height: 1.5;
+    display: inline-block;
+    font-size: .7rem;
+    background: #eeedee;
+    padding: .2em 1em;
+    min-width: 355px;
+    border-radius: 5px
+}
+
+#app-container #iready-header .header-right {
+    padding-left: 25px;
+    border-left: 1px solid #ccc;
+    float: right;
+    margin-top: 5px
+}
+
+#app-container #iready-header .close {
+    border: none;
+    position: relative;
+    background-image: url(../images/close.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 66%;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    height: 25px;
+    width: 25px
+}
+
+#app-container #iready-header .close:focus {
+    outline: 6px solid #0ff;
+    border: 2px dotted #4e4e50
+}
+
+#app-container #app-header {
+    background: #fff;
+    padding: 20px
+}
+
+#app-container #app-header .logo {
+    float: left
+}
+
+#app-container #app-header .user {
+    float: right;
+    font-size: 22px
+}
+
+#app-container #app-header .user .name {
+    color: #ea5e24;
+    margin-right: 20px
+}
+
+#app-container #app-header .user .change {
+    color: #4ca3bf;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+#app-container #app-body {
+    background: url(../images/bg-triangles.png) no-repeat top left
+}
+
+#app-container #app-body .game-boxes {
+    padding: 20px 0 20px 0;
+    max-width: 1150px;
+    margin: 0 auto;
+    float: none
+}
+
+#app-container #app-body .game-boxes .detail-wrapper {
+    background: rgba(0, 0, 0, .5);
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 50
+}
+
+#app-container #app-body .game-boxes .detail-wrapper .detail-popup {
+    background: #fff;
+    border-radius: 18px;
+    height: 520px;
+    left: 50%;
+    padding: 12px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 380px
+}
+
+#app-container #app-body .game-boxes .detail-wrapper .detail-popup .lock {
+    background-color: #ffdc7b;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    padding-left: 35px
+}
+
+#app-container #app-body .game-boxes .detail-wrapper .detail-popup .lock .lock-message-text {
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle
+}
+
+#app-container #app-body .game-boxes .detail-wrapper .detail-popup .lock .lock-message-text .notice {
+    font-weight: 700;
+    color: #282828
+}
+
+#app-container #app-body .game-boxes .detail-wrapper .detail-popup .description {
+    font-size: 16px;
+    font-weight: 700;
+    font-style: italic;
+    height: 50px;
+    line-height: 50px;
+    text-align: center
+}
+
+#app-container #app-body .game-boxes .detail-wrapper .detail-popup .description .description-text {
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle
+}
+
+#app-container #app-body .game-boxes .detail-wrapper .detail-popup .list {
+    color: #515151;
+    height: 375px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    padding: 0 4px 0 10px;
+    width: 100%
+}
+
+#app-container #app-body .game-boxes .detail-wrapper .detail-popup .list .item {
+    background-color: #f4f4f4;
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    background-size: auto 48px;
+    border-radius: 8px;
+    color: #5a5a5a;
+    font-size: 16px;
+    height: 60px;
+    line-height: 60px;
+    margin-top: 10px;
+    padding-left: 65px;
+    width: 100%
+}
+
+#app-container #app-body .game-boxes .detail-wrapper .detail-popup .button {
+    margin: 0 auto;
+    width: 100%
+}
+
+#app-container #app-body .game-boxes .detail-wrapper .detail-popup .button:active {
+    margin-top: 5px
+}
+
+#app-container #app-body .game-boxes .game-box {
+    background: #606060;
+    border-radius: 4px;
+    display: inline-block;
+    height: 246px;
+    width: 246px;
+    width: calc(25% - 30px);
+    margin: 25px 0 0 25px;
+    overflow: hidden;
+    position: relative
+}
+
+#app-container #app-body .game-boxes .game-box img {
+    height: auto;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    cursor: pointer
+}
+
+#app-container #app-body .game-boxes .game-box .screen {
+    background: #000;
+    height: 100%;
+    opacity: .5;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../images/LockedIcon.png)
+}
+
+#app-container #app-body .game-boxes .game-box .question-mark {
+    background: rgba(0, 0, 0, .4);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    position: absolute;
+    text-align: center;
+    left: 6px;
+    top: 6px;
+    z-index: 5
+}
+
+#app-container #app-body .game-boxes .game-box .question-mark.locked {
+    color: #333;
+    background: #d6dbda
+}
+
+#app-container #app-body .game-boxes .game-box .button-wrapper {
+    bottom: 10px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 4;
+    text-align: center
+}
+
+#app-container #app-body .game-boxes .game-box .button-wrapper .button {
+    width: 95%
+}
+
+#app-container #app-popup .popup-box {
+    background: #f6f5f5;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    top: 60px;
+    height: 230px;
+    max-width: 440px;
+    width: calc(100% - 40px);
+    transition: all .4s ease-out 0s;
+    display: table;
+    margin: 0 auto 100px;
+    position: relative;
+    text-align: center;
+    vertical-align: middle
+}
+
+#app-container #app-popup .popup-box .error {
+    height: 50px;
+    padding: 20px 20px 0 20px;
+    margin: 0 0 20px 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #db1f26
+}
+
+#app-container #app-popup .popup-box .text {
+    height: 40px;
+    padding: 0 10px 0 0;
+    vertical-align: middle;
+    text-align: right;
+    font-size: 14px;
+    color: #434b52
+}
+
+#app-container #app-popup .popup-box input {
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    height: 40px;
+    width: calc(100% - 200px);
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+    color: #515251;
+    font-size: 22px;
+    font-weight: 700
+}
+
+#app-container #app-popup .popup-box .go-button {
+    position: relative;
+    top: 40px;
+    width: 156px;
+    height: 52px;
+    font-size: 30px;
+    border: none;
+    border-radius: 30px
+}
+
+#app-container #app-popup .popup-box .go-button.grey {
+    background: #e5e5e5;
+    color: #fff
+}
+
+#app-container #app-popup .popup-box .go-button.green {
+    background: #15891d;
+    color: #fff
+}
+
+.educator-demo {
+    background-color: #fff;
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+    padding: 3px 7px;
+    font-family: 'Open Sans', Helvetica, Arial;
+    position: absolute;
+    top: 5px;
+    left: 10px
+}
+
+.hidden-node {
+    display: none !important
+}
