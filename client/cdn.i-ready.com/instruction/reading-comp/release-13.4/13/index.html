@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <script>
+        var env;
+        switch (location.hostname) {
+            case 'cdn.i-ready.com':
+            case 'content.i-ready.com':
+                env = 'prod';
+                break;
+            case 'stg-cdn.i-ready.com':
+            case 'staging-cdn.i-ready.com':
+            case 'stg-content.i-ready.com':
+                env = 'stg';
+                break;
+            case 'localhost':
+                env = 'dev';
+                break;
+            default:
+                env = 'test';
+        }
+
+        if (env !== 'dev') {
+            document.write(decodeURI("%3Cscript>window._trackJs = {token: '7b0e187156f54c728faa8a4fd6cbceb5', application: 'reading_comp_" + env + "'}%3C/script%3E"));
+            document.write(decodeURI("%3Cscript src='/libs/trackjs/trackjs-2.10.2.js'%3E%3C/script%3E"));
+        }
+    </script>
+    <title>Reading Comp</title>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <link rel="icon" href="favicon.ico">
+    <script defer="defer" src="extra-libs.js"></script>
+    <script defer="defer" src="styles.js"></script>
+    <script defer="defer" src="main.js"></script>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="ifabric-react-root"></div>
+    <div class="preload-container" aria-hidden="true" style="opacity: 0; position: fixed; left: -4096px; width: 1px; height: 1px; pointer-events: none;"></div>
+    <script>
+        var preloadContainer = document.getElementsByClassName('preload-container')[0];
+        var fonts = [];
+        if (/DI\.ELA\.COM\.[K12]/.test(document.location.hash)) {
+            fonts.push({
+                family: 'Sweater School Rg'
+            });
+            fonts.push({
+                family: 'Sweater School Sb'
+            });
+            fonts.push({
+                family: 'Sweaterschool'
+            });
+            fonts.push({
+                family: 'Sweaterschool',
+                weight: 'bold'
+            });
+            fonts.push({
+                family: 'Sweaterschool',
+                weight: '600'
+            });
+            fonts.push({
+                family: 'Sweaterschool',
+                weight: '800'
+            });
+        } else {
+            fonts.push({
+                family: 'Muli Rg'
+            });
+            fonts.push({
+                family: 'Muli It'
+            });
+            fonts.push({
+                family: 'Muli Sb'
+            });
+            fonts.push({
+                family: 'Muli Sb It'
+            });
+            fonts.push({
+                family: 'Muli Bd',
+                weight: 'bold'
+            });
+            fonts.push({
+                family: 'Muli Bd It',
+                weight: 'bold'
+            });
+            fonts.push({
+                family: 'Muli Xb',
+                weight: '900'
+            });
+            fonts.push({
+                family: 'Muli Xb It',
+                weight: '900'
+            });
+        }
+        for (var i = 0; i < fonts.length; i++) {
+            var elem = document.createElement('div');
+            var val = 'font-family: ' + fonts[i].family + ';';
+            if (fonts[i].weight) {
+                val += ' font-weight: ' + fonts[i].weight + ';';
+            }
+            elem.setAttribute('style', val);
+            elem.appendChild(document.createTextNode(fonts[i].family));
+            preloadContainer.appendChild(elem);
+        }
+    </script>
+</body>
+
+</html>
