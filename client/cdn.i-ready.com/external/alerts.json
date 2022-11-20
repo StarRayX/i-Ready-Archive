@@ -1,1 +1,15 @@
-No Content: https://cdn.i-ready.com/external/alerts.json?callback=caAlertCallback
+caAlertCallback({
+  "alerts":
+  [
+    {
+    "alert":"",
+    "id":"11-20-2022-09-47-16",
+    "hidden":"true",
+    "isMaintenance":"true"
+    }
+  ],
+  "safariMobileCheck": {
+    "checkEnabled": true,
+    "checkProperties": ["orientation"]
+  }
+});
